@@ -27,8 +27,7 @@
         android:textStyle="bold"
         android:textSize="30dp"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/tomButton"
-        android:layout_toEndOf="@+id/tomButton" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"

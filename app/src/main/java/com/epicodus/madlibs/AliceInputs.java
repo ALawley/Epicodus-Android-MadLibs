@@ -23,7 +23,7 @@ public class AliceInputs extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_story2_inputs);
+        setContentView(R.layout.alice_inputs);
         mNounText = (EditText) findViewById(R.id.nounText);
         mOccupationText = (EditText) findViewById(R.id.occupationText);
         mVerbText = (EditText) findViewById(R.id.verbText);
