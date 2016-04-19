@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".TomSubmitActivity" />
-        <activity android:name=".TomInputs"></activity>
+        <activity android:name=".TomInputs" />
+        <activity android:name=".Story2Inputs"></activity>
     </application>
 
 </manifest>
