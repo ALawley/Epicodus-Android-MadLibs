@@ -50,7 +50,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/occupationText"
         android:layout_alignEnd="@+id/occupationText"
-        android:hint="verb" />
+        android:hint="verb ending in -ing" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -95,4 +95,15 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weaponText"
+        android:layout_below="@+id/adjectiveText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/adjectiveText"
+        android:layout_alignEnd="@+id/adjectiveText"
+        android:hint="weapon" />
 </RelativeLayout>

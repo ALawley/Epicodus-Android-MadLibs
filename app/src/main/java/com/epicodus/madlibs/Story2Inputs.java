@@ -18,6 +18,7 @@ public class Story2Inputs extends AppCompatActivity {
     private EditText mExclamationText;
     private EditText mAdverbText;
     private EditText mAdjectiveText;
+    private EditText mWeaponText;
     private ArrayList<String> userInput;
 
     @Override
@@ -30,6 +31,7 @@ public class Story2Inputs extends AppCompatActivity {
         mExclamationText = (EditText) findViewById(R.id.exclamationText);
         mAdverbText = (EditText) findViewById(R.id.adverbText);
         mAdjectiveText = (EditText) findViewById(R.id.adjectiveText);
+        mWeaponText = (EditText) findViewById(R.id.weaponText);
         userInput = new ArrayList<String>();
 
         mSubmitWordsButton = (Button) findViewById(R.id.submitWordsButton);
@@ -43,6 +45,7 @@ public class Story2Inputs extends AppCompatActivity {
                     userInput.add(mExclamationText.getText().toString());
                     userInput.add(mAdverbText.getText().toString());
                     userInput.add(mAdjectiveText.getText().toString());
+                    userInput.add(mWeaponText.getText().toString());
 
                     Intent intent = new Intent(Story2Inputs.this, Story2Submit.class);
                     intent.putExtra("userInput", userInput);
