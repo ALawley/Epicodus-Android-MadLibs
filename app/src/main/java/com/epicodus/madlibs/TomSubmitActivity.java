@@ -7,14 +7,14 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class SubmitActivity extends AppCompatActivity {
-    public static final String TAG = SubmitActivity.class.getSimpleName();
+public class TomSubmitActivity extends AppCompatActivity {
+    public static final String TAG = TomSubmitActivity.class.getSimpleName();
     private TextView mStoryTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_submit);
+        setContentView(R.layout.tom_submit);
 
         mStoryTextView = (TextView) findViewById(R.id.storyTextView);
 

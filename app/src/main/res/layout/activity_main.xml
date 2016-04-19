@@ -9,80 +9,36 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.epicodus.madlibs.MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tom"
+        android:id="@+id/tomButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mad Libs"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/appTitleText"
+        android:id="@+id/textView"
         android:textStyle="bold"
-        android:textSize="30dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/adjectiveText"
-        android:layout_below="@+id/appTitleText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/appTitleText"
-        android:hint="adjective"
-        android:layout_alignRight="@+id/appTitleText"
-        android:layout_alignEnd="@+id/appTitleText" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/verbText"
-        android:layout_below="@+id/adjectiveText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/appTitleText"
-        android:hint="verb ending in -ing"
-        android:layout_alignRight="@+id/appTitleText"
-        android:layout_alignEnd="@+id/appTitleText" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/nounText"
-        android:layout_below="@+id/verbText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/appTitleText"
-        android:hint="noun"
-        android:layout_alignRight="@+id/verbText"
-        android:layout_alignEnd="@+id/verbText" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/adverbText"
-        android:layout_below="@+id/nounText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="adverb"
-        android:layout_alignRight="@+id/nounText"
-        android:layout_alignEnd="@+id/nounText" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/properNounText"
-        android:layout_below="@+id/adverbText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="proper noun"
-        android:layout_alignRight="@+id/adverbText"
-        android:layout_alignEnd="@+id/adverbText" />
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tomButton"
+        android:layout_toEndOf="@+id/tomButton" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="See Your Story"
-        android:id="@+id/submitWordsButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/tomButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="52dp"
+        android:layout_marginEnd="52dp" />
+
 </RelativeLayout>

@@ -17,11 +17,11 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 /**
  * Created by Guest on 4/19/16.
  */
-public class MainActivityInstrumentationTest {
+public class TomInputsInstrumentationTest {
 
     @Rule
-    public ActivityTestRule<MainActivity> activityTestRule =
-            new ActivityTestRule<>(MainActivity.class);
+    public ActivityTestRule<TomInputs> activityTestRule =
+            new ActivityTestRule<>(TomInputs.class);
 
     @Test
     public void validateEditText() {

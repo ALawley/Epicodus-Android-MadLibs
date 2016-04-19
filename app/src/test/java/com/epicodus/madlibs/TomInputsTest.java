@@ -2,7 +2,6 @@ package com.epicodus.madlibs;
 
 import android.content.Intent;
 import android.os.Build;
-import android.util.Log;
 import android.widget.TextView;
 
 import org.junit.Before;
@@ -20,12 +19,12 @@ import static junit.framework.Assert.assertTrue;
  */
 @Config(constants = BuildConfig.class, sdk = Build.VERSION_CODES.LOLLIPOP)
 @RunWith(RobolectricGradleTestRunner.class)
-public class MainActivityTest {
+public class TomInputsTest {
     private static final String TAG = "MyActivity";
-    private MainActivity activity;
+    private TomInputs activity;
     @Before
     public void setup() {
-        activity = Robolectric.setupActivity(MainActivity.class);
+        activity = Robolectric.setupActivity(TomInputs.class);
     }
 
     @Test
@@ -37,7 +36,7 @@ public class MainActivityTest {
     @Test
     public void secondActivityStarted() {
         activity.findViewById(R.id.submitWordsButton).performClick();
-        Intent expectedIntent = new Intent(activity, SubmitActivity.class);
+        Intent expectedIntent = new Intent(activity, TomSubmitActivity.class);
         ShadowActivity shadowActivity = org.robolectric.Shadows.shadowOf(activity);
         Intent actualIntent = shadowActivity.getNextStartedActivity();
         assertTrue(actualIntent.filterEquals(expectedIntent));
