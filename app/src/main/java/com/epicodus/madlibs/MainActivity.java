@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mSubmitWordsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                userInput.clear();
                 userInput.add(mAdjectiveText.getText().toString());
                 userInput.add(mVerbText.getText().toString());
                 userInput.add(mNounText.getText().toString());
