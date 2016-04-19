@@ -6,11 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class Story2Inputs extends AppCompatActivity {
+public class AliceInputs extends AppCompatActivity {
     private Button mSubmitWordsButton;
     private EditText mNounText;
     private EditText mOccupationText;
@@ -47,7 +46,7 @@ public class Story2Inputs extends AppCompatActivity {
                     userInput.add(mAdjectiveText.getText().toString());
                     userInput.add(mWeaponText.getText().toString());
 
-                    Intent intent = new Intent(Story2Inputs.this, Story2Submit.class);
+                    Intent intent = new Intent(AliceInputs.this, AliceSubmit.class);
                     intent.putExtra("userInput", userInput);
                     startActivity(intent);
                 }

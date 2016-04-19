@@ -43,7 +43,7 @@ public class TomInputs extends AppCompatActivity {
                 userInput.add(mAdverbText.getText().toString());
                 userInput.add(mProperNounText.getText().toString());
                 Log.d(TAG, userInput.get(0));
-                Intent intent = new Intent(TomInputs.this, TomSubmitActivity.class);
+                Intent intent = new Intent(TomInputs.this, TomSubmit.class);
                 intent.putExtra("userInput", userInput);
                 startActivity(intent);
             }

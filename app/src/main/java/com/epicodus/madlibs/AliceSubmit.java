@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class Story2Submit extends AppCompatActivity {
+public class AliceSubmit extends AppCompatActivity {
     private TextView mStoryTextView;
 
     @Override

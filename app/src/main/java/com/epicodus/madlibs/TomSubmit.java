@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class TomSubmitActivity extends AppCompatActivity {
-    public static final String TAG = TomSubmitActivity.class.getSimpleName();
+public class TomSubmit extends AppCompatActivity {
+    public static final String TAG = TomSubmit.class.getSimpleName();
     private TextView mStoryTextView;
 
     @Override

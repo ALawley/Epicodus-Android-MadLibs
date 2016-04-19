@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mAliceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Story2Inputs.class);
+                Intent intent = new Intent(MainActivity.this, AliceInputs.class);
                 startActivity(intent);
             }
         });

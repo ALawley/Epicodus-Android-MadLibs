@@ -36,7 +36,7 @@ public class TomInputsTest {
     @Test
     public void secondActivityStarted() {
         activity.findViewById(R.id.submitWordsButton).performClick();
-        Intent expectedIntent = new Intent(activity, TomSubmitActivity.class);
+        Intent expectedIntent = new Intent(activity, TomSubmit.class);
         ShadowActivity shadowActivity = org.robolectric.Shadows.shadowOf(activity);
         Intent actualIntent = shadowActivity.getNextStartedActivity();
         assertTrue(actualIntent.filterEquals(expectedIntent));

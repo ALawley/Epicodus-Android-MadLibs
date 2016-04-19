@@ -15,10 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TomSubmitActivity" />
+        <activity android:name=".TomSubmit" />
         <activity android:name=".TomInputs" />
-        <activity android:name=".Story2Inputs" />
-        <activity android:name=".Story2Submit"></activity>
+        <activity android:name=".AliceInputs" />
+        <activity android:name=".AliceSubmit"></activity>
     </application>
 
 </manifest>
