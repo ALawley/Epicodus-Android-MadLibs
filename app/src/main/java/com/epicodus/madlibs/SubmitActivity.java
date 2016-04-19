@@ -20,6 +20,13 @@ public class SubmitActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         ArrayList<String> userInput = intent.getStringArrayListExtra("userInput");
-        mStoryTextView.setText("This is a story about " + userInput.get(0) + " " + userInput.get(1) + ".");
+        String storyString = "This is a story about " + userInput.get(0) + " Tom's " +
+                userInput.get(1) + " problem. One day, he went to town to buy a " + userInput.get
+                (2) + " but found that he was so bad at " + userInput.get(1) + " he couldn't get " +
+                "there. After lots of practice " + userInput.get(3) + " " + userInput.get(1) +
+                ", getting to the store " + userInput.get(3) + " wasn't a problem at all, even " +
+                "when " + userInput.get(1) + " with Tom's super " + userInput.get(0) + " friend, " +
+                "" + userInput.get(4) + "!";
+        mStoryTextView.setText(storyString);
     }
 }

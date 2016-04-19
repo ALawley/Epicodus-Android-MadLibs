@@ -26,9 +26,10 @@
         android:layout_below="@+id/appTitleText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/appTitleText"
         android:layout_toStartOf="@+id/appTitleText"
-        android:hint="adjective" />
+        android:hint="adjective"
+        android:layout_alignRight="@+id/appTitleText"
+        android:layout_alignEnd="@+id/appTitleText" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -37,9 +38,10 @@
         android:layout_below="@+id/adjectiveText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/appTitleText"
         android:layout_toStartOf="@+id/appTitleText"
-        android:hint="verb" />
+        android:hint="verb ending in -ing"
+        android:layout_alignRight="@+id/appTitleText"
+        android:layout_alignEnd="@+id/appTitleText" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -48,29 +50,32 @@
         android:layout_below="@+id/verbText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/appTitleText"
         android:layout_toStartOf="@+id/appTitleText"
-        android:hint="noun" />
+        android:hint="noun"
+        android:layout_alignRight="@+id/verbText"
+        android:layout_alignEnd="@+id/verbText" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/adverbText"
         android:layout_below="@+id/nounText"
-        android:layout_toLeftOf="@+id/appTitleText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="adverb" />
+        android:hint="adverb"
+        android:layout_alignRight="@+id/nounText"
+        android:layout_alignEnd="@+id/nounText" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/properNounText"
         android:layout_below="@+id/adverbText"
-        android:layout_toLeftOf="@+id/appTitleText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="proper noun" />
+        android:hint="proper noun"
+        android:layout_alignRight="@+id/adverbText"
+        android:layout_alignEnd="@+id/adverbText" />
 
     <Button
         android:layout_width="match_parent"
