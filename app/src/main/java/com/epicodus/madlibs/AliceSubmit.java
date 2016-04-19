@@ -28,7 +28,7 @@ public class AliceSubmit extends AppCompatActivity {
                 + " and shouted '" + userInput.get(3) + ", Alice, I swear that I'm better at " +
                 userInput.get(2) + " than you will ever be!' In a moment of pure rage, Alice spun" +
                 " around in her chair, " + userInput.get(4) + " drew her " + userInput.get(6) +
-                " and brought revenge like no other " + userInput.get(1) + " ever had, or ever " +
+                ", and brought revenge like no other " + userInput.get(1) + " ever had, or ever " +
                 "will again.";
         mStoryTextView.setText(storyText);
 

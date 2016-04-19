@@ -41,12 +41,7 @@ public class TomInputsInstrumentationTest {
         onView(withId(R.id.nounText)).perform(typeText(noun));
         onView(withId(R.id.adverbText)).perform(typeText(adverb));
         onView(withId(R.id.properNounText)).perform(typeText(properNoun));
-        Espresso.closeSoftKeyboard();
-        try {
-            Thread.sleep(50);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         onView(withId(R.id.submitWordsButton)).perform(click());
         onView(withId(R.id.storyTextView)).check(matches
                 (withText("This is a story about " + adjective + " Tom's " + verb + " problem. " +
