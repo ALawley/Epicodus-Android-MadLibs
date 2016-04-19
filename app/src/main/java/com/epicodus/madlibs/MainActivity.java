@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 userInput.add(mProperNounText.getText().toString());
                 Log.d(TAG, userInput.get(0));
                 Intent intent = new Intent(MainActivity.this, SubmitActivity.class);
+                intent.putExtra("userInput", userInput);
                 startActivity(intent);
             }
         });
