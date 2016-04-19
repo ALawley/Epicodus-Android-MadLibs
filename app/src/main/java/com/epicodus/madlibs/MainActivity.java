@@ -3,6 +3,7 @@ package com.epicodus.madlibs;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mNounText = (EditText) findViewById(R.id.nounText);
         mAdverbText = (EditText) findViewById(R.id.adverbText);
         mProperNounText = (EditText) findViewById(R.id.properNounText);
+        userInput = new ArrayList<String>();
         mSubmitWordsButton = (Button) findViewById(R.id.submitWordsButton);
         mSubmitWordsButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 userInput.add(mNounText.getText().toString());
                 userInput.add(mAdverbText.getText().toString());
                 userInput.add(mProperNounText.getText().toString());
+                Log.d(TAG, userInput.get(0));
                 Intent intent = new Intent(MainActivity.this, SubmitActivity.class);
                 startActivity(intent);
             }
